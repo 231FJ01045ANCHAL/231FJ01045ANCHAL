@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Mall</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <header class="bg-dark text-white py-3 text-center">
+    <h1>Welcome to ICONIC City Mall</h1>
+    <p>Your one shop destination for Shopping, Dinning</p>
+</header>
+<nav class="navbar navbar-expand-lg">
+    <div class="Container-fluid">
+    <a class="navbar-brand text-white"href="#home"ICONIC Mall</a>
+        <button class="navbar-toggler"type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"</span>
+    </button>
+    <div class="collapse navbar-collapse"id="navbarnav">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link"href="Home">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"href="#"id="navbarDropdown"role="button"data-bs-toggle="dropdown">
+                        service
+                    </a>
+    
+            <ul class="dropdown-menu">
+              <li><button class="dropdown-item" href="#Store">Store</button></li>
+              <li><button class="dropdown-item" type="#offer">Offer</button></li>
+              <li><button class="dropdown-item" type="#Event">Event</button></li>
+            </ul>
+        </nav>
+        <nav aria-table="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#Home">Home</a></li>
+                <li class="breadcrumb-item"><a href="#shops">shops</a></li>
+                <li calss="breadcrumb-item active"aria-current="page">Featured Shops</li>
+            </ol>
+        </nav>
+        <section id="shops"class="py-5">
+            <div calss="container">
+                <h2 calss="text-center mb-4">Featured shops</h2>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card">
+                            <img src="data:image/png;base64,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"
+                             <div class="card-body text-center">
+                                <h5 class="card-tittle">Faishon Avenue</h5>
+                                <p class="card-text">Discover the latest trends in clothing and accessions</p>
+                                    <a href="https://www.flipkart.com/">visit store</a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <img src="data:image/png;base64,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"
+                     <div class="card-body text-center">
+                        <h5 class="card-tittle">Faishon Avenue</h5>
+                        <p class="card-text">Discover the latest trends in clothing and accessions</p>
+                            <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwikkaKBm9aKAxUtwjwCHSXfJr8YABAAGgJzZg&ae=2&aspm=1&co=1&ase=5&gclid=EAIaIQobChMIpJGigZvWigMVLcI8Ah0l3ya_EAAYASAAEgKQF_D_BwE&ohost=www.google.com&cid=CAASJeRojH33JsmpPA3kUZpJb675o4AKtr3Ur6yY5xq8hBsa9rLrTIo&sig=AOD64_2jRKUTiGxKhUwp36P1pM3RpIEabw&q&adurl&ved=2ahUKEwiC-J2Bm9aKAxVsUGwGHYFJERsQ0Qx6BAgKEAE">visit store</a>
+                     </div>
+                </div>
+        </section>
+</body>
+</html>
